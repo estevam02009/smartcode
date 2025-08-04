@@ -182,7 +182,7 @@ function App() {
                   >
                     {item}
                   </button>
-                ))}
+                {['']}
               </div>
             </div>
           </div>

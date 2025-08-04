@@ -149,42 +149,6 @@ function App() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className='hidden md:block'>
-              <div className='flex space-x-8'>
-                {['Home', 'Sobre', 'Portfólio', 'Serviços', 'Contato'].map((item) => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item.toLowerCase().replace(/\s/g, '').replace('ó', 'o'))}
-                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                      acttiveSection === item.toLowerCase().replace(/\s/g, '').replace('ó', 'o')
-                        ? 'text-blue-600 border-b-2 border-blue-600'
-                        : 'text-gray-700 hover:text-blue-600'
-                    }`}
-                  >
-                    {item}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* MObile Menu Button */}
-            <div className='md:hidden'>
-              <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg'>
-                {['Home', 'Sobre', 'Portfólio', 'Serviços', 'Contato'].map((item) => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item.toLowerCase().replace(/\s/g, '').replace('ó', 'o'))}
-                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                      acttiveSection === item.toLowerCase().replace(/\s/g, '').replace('ó', 'o')
-                        ? 'text-blue-600 border-b-2 border-blue-600'
-                        : 'text-gray-700 hover:text-blue-600'
-                    }`}
-                  >
-                    {item}
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </nav>
