@@ -139,12 +139,9 @@ function App() {
   ];
 
   return (
-    <div className='min-h-screen bg-white'>
-      {/* NVIGATION */}
-      <nav className='fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm'>
-      
-      </nav>
-    </div>
+    <>
+      <h1 className="bg-amber-100 font-bold text-black items-center justify-center">SmartCode</h1>
+    </>
   )
 }
 
